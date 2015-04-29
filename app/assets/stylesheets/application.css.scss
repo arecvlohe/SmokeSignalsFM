@@ -1,0 +1,200 @@
+$highlight: #cca580;
+$white: #ffffff;
+$dark: #443847;
+$light: #edeff5;
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.wrapper-wide {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper-skinny {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.responsive-break {
+  white-space: nowrap;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+}
+
+.btn-hl {
+  background: $highlight;
+  transition: background 0.4s ease-in-out;
+  display: inline-block;
+  min-width: 8.5rem;
+  &:hover {
+    background: darken($highlight, 7.5%);
+  }
+}
+
+.btn-df {
+  background: $white;
+  color: $highlight;
+  transition: background 0.4s ease-in-out;
+  display: inline-block;
+  min-width: 8.5rem;
+  &:hover {
+    background: darken($white, 7.5%);
+  }
+}
+
+.btn-block {
+  display: block;
+  margin: 0 auto;
+}
+
+#main-header {
+  color: $dark;
+  background: $white;
+  padding: 2.5rem 0;
+  #logo {
+    text-decoration: none;
+    display: inline;
+    color: $dark;
+    float: left;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  nav {
+    display: inline-block;
+    float: right;
+    margin-top: 1rem;
+    ul {
+      margin: 0;
+      li {
+        display: inline;
+        list-style: none;
+        color: black;
+        margin-left: 2.5rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  background: {
+    repeat: no-repeat;
+    size: cover;
+    position: center center;
+  };
+  margin-bottom: 4rem;
+  h1 {
+    font: {
+      size: 3rem;
+      weight: 300;
+    };
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 8rem 0;
+  }
+}
+
+.pagination:before, .pagination:after {
+  content: " ";
+  display: table;
+}
+
+.pagination:after {
+  clear: both;
+}
+
+.pagination {
+  text-align: center;
+  margin: 1rem 0 5rem 0;
+  a, .previous_page, .current, .next_page {
+    padding: 0.75rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 0.15rem;
+    line-height: 1.25;
+    text-decoration: none;
+    background-color: #eee;
+    font-weight: 700;
+    font-size: 0.7rem;
+    font-style: normal;
+    color: $dark;
+    &:hover {
+      background: $highlight;
+      color: $white;
+    }
+  }
+  .current {
+    background: $highlight;
+    color: $white;
+  }
+  .disabled {
+    color: #c0c0c0;
+    &:hover {
+      color: #c0c0c0;
+      background-color: #eee;
+    }
+  }
+}
+
+.field {
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+input[type="email"], input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.25rem 1rem;
+  background: $light;
+  border: 1px solid darken($light, 5%);
+  border-radius: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+textarea {
+  min-height: 8rem;
+  margin-top: 0.5rem !important;
+}
+
+.form {
+  padding: 0 0 5rem 0;
+}
+
+@import "normalize";
+@import "welcome";
+// @import "podcasts";
+// @import "podcast-show";
+// @import "episode";
+// @import "dashboard";
+// @import "sign-in-sign-up";
