@@ -1,7 +1,7 @@
 <div id="background">
   <header class="cf">
     <div class="wrapper-wide">
-      <a id="logo" href="#">SmokeSignals.fm</a>
+      <a><% link_to "SmokeSignals.fm", root_path, id: "logo" %></a>
       <nav>
         <ul>
           <% unless podcast_signed_in? %>
