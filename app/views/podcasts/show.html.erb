@@ -1,0 +1,52 @@
+<div id="podcast-show">
+  <div id="show-banner">
+    <div class="wrapper-skinny">
+      <h1><%= @podcast.title %></h1>
+      <p class="description"><%= @podcast.description %></p>
+      <% unless @podcast.itunes.blank? %>
+        <a href="<%= @podcast.itunes %>" class="subscribe-link">iTunes</a>
+      <% end %>
+      <% unless @podcast.stitcher.blank? %>
+        <a href="<%= @podcast.stitcher %>" class="subscribe-link">Stitcher</a>
+      <% end %>
+      <% unless @podcast.podbay.blank? %>
+        <a href="<%= @podcast.podbay %>" class="subscribe-link">Podbay</a>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div id="breadcrumb">
+  <%= link_to podcasts_path do %>
+  All Podcasts
+  <span>/</span>
+  The Rocketship Podcast
+  </div>
+  <% end %>
+<div id="episodes">
+  <div class="wrapper-skinny">
+    <ul class="cf">
+      <li class="cf">
+        <div class="episode-thumbnail"><a href="episode.html"><img src="img/podcasts/pieter_levels.png"></a></div>
+        <div class="episode-overview">
+          <h2><a>How to Pull Off 12 Startups</a></h2>
+          <p>Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+      </li>
+      <li class="cf">
+        <div class="episode-thumbnail"><a href="episode.html"><img src="img/podcasts/pieter_levels.png"></a></div>
+        <div class="episode-overview">
+          <h2><a>How to Pull Off 12 Startups</a></h2>
+          <p>Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+      </li>
+      <li class="cf">
+        <div class="episode-thumbnail"><a href="episode.html"><img src="img/podcasts/pieter_levels.png"></a></div>
+        <div class="episode-overview">
+          <h2><a>How to Pull Off 12 Startups</a></h2>
+          <p>Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="pagination"><span class="previous_page disabled">Previous</span><em class="current">1</em><a href-"#>2</a><a href="#" class="next_page">Next</a></div>
