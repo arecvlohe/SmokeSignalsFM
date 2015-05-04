@@ -20,21 +20,34 @@
   All Podcasts
   <span>/</span>
   <%= link_to @podcast.title, podcast_path(@podcast) %>
-  </div>
+  <span>/</span>
+  <%= link_to @episode.title %>
   <% end %>
+</div>
+
+<div id="episode-content">
+  <div class="wrapper-skinny"><img src="img/podcasts/pieter_levels.png" alt="Peter Lievels" class="current-episode-thumbnail">
+    <h2><%= @episode.title %></h2>
+    <p class="description"><%= @episode.description %></p>
+  </div>
+</div>
+
+
   <div id="episodes">
     <div class="wrapper-skinny">
       <ul class="cf">
         <% @episodes.each do |episode| %>
-        <li class="cf">
-          <div class="episode-thumbnail"><a href="#"><img src="img/podcasts/pieter_levels.png"></a></div>
-          <div class="episode-overview">
-            <h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
-            <p class="description"><%= truncate(episode.description, length: 150) %></p>
-          </div>
-        </li>
+          <li class="cf">
+            <div class="episode-thumbnail">
+              <a href="episode.html"><img src="img/podcasts/pieter_levels.png"></a>
+            </div>
+            <div class="episode-overview">
+              <h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
+              <p class="description"><%= truncate(episode.description, length: 150) %></p>
+            </div>
+          </li>
         <% end %>
-      </div>
+      </ul>
     </div>
   </div>
 </div>
