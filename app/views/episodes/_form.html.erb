@@ -7,6 +7,10 @@
     <%= f.label :description %> <br>
     <%= f.text_area :description %>
   </div>
+  <div class="field">
+    <%= f.label :episode_thumbnail %> <br>
+    <%= f.file_field :episode_thumbnail %>
+  </div>
 
   <%= f.submit class: "btn btn-hl btn-block" %>
 <% end %>

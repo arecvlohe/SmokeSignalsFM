@@ -26,7 +26,8 @@
 </div>
 
 <div id="episode-content">
-  <div class="wrapper-skinny"><img src="img/podcasts/pieter_levels.png" alt="Peter Lievels" class="current-episode-thumbnail">
+  <div class="wrapper-skinny">
+    <%= image_tag @episode.episode_thumbnail.url(:medium), class: "current-episode-thumbnail" %>
     <h2><%= @episode.title %></h2>
     <p class="description"><%= @episode.description %></p>
   </div>
@@ -39,7 +40,9 @@
         <% @episodes.each do |episode| %>
           <li class="cf">
             <div class="episode-thumbnail">
-              <a href="episode.html"><img src="img/podcasts/pieter_levels.png"></a>
+              <a href="episode.html">
+                <%= image_tag episode.episode_thumbnail.url(:medium), class: "current-episode-thumbnail" %>
+              </a>
             </div>
             <div class="episode-overview">
               <h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
