@@ -62,3 +62,17 @@
     }
   }
 }
+
+#episodes {
+  .episode-overview {
+    .edit-links {
+      font-weight: 700;
+      font-size: 0.9rem;
+      a {
+        color: $highlight;
+        margin-right: 1rem;
+        text-decoration: none;
+      }
+    }
+  }
+}
