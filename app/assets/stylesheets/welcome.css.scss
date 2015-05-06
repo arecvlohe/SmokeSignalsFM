@@ -2,7 +2,7 @@
   margin: 0;
   width: 100%;
   height: 100vh;
-  background-image: image-url("dreamcatcher.jpg");
+  // background-image: image-url("dreamcatcher.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-attachment: fixed;
@@ -37,6 +37,8 @@
           }
           &:hover {
             cursor: pointer;
+            color: $highlight;
+            border-bottom: 1px solid $highlight;
           }
         }
       }

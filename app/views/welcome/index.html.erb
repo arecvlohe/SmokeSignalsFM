@@ -4,7 +4,7 @@
       <%= link_to "SmokeSignals.fm", root_path, id: "logo" %>
       <nav>
         <ul>
-          <li><%= link_to "Search", podcasts_path %></li>
+          <li><%= link_to "Explore", podcasts_path %></li>
           <li><%= link_to "Sign In", new_podcast_session_path %></li>
           <li><%= link_to "Create a Podcast", new_podcast_registration_path %></li>
         </ul>
@@ -12,8 +12,8 @@
     </div>
   </header>
   <div class="wrapper-skinny">
-    <h1>Search for Podcasts from Indian Country or Create Your Own</h1>
+    <h1>Explore Podcasts from Indian Country or Create Your Own</h1>
     <%= link_to "Create a Podcast", new_podcast_registration_path, class: "btn btn-hl" %>
-    <%= link_to "Search", podcasts_path, class: "btn btn-df" %>
+    <%= link_to "Explore", podcasts_path, class: "btn btn-hl" %>
   </div>
 </div>
