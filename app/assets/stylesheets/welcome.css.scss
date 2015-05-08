@@ -38,7 +38,7 @@
           &:hover {
             cursor: pointer;
             color: $highlight;
-            border-bottom: 1px solid $highlight;
+            border-bottom: 1px solid $flat-red;
           }
         }
       }
@@ -51,7 +51,7 @@
     text-align: center;
     background-image: none;
     h1 {
-      color: #443847;
+      color: $flat-blue;
       font: {
         weight: 500;
         size: 3.5rem;
