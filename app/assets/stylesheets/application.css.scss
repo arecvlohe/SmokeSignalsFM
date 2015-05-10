@@ -127,9 +127,12 @@ body {
   color: $dark;
   background: $white;
   padding: 2.5rem 0;
+  box-sizing: border-box;
+  text-align: center;
+
   #logo {
     text-decoration: none;
-    display: inline;
+    display: inline-block;
     color: $dark;
     float: left;
     text-transform: uppercase;
@@ -143,8 +146,9 @@ body {
     margin-top: 1rem;
     ul {
       margin: 0;
+      overflow: hidden;
       li {
-        display: inline;
+        display: inline-block;
         list-style: none;
         color: black;
         margin-left: 2.5rem;
