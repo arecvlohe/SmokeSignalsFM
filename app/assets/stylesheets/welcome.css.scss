@@ -24,6 +24,10 @@
         float: none;
         display: block;
       }
+
+      @media screen and (max-width: 470px) {
+        font-size: 1.5rem;
+      }
     }
 
     nav {

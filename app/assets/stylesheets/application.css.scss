@@ -139,14 +139,34 @@ body {
     font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 3px;
+
+    @media screen and (max-width: 1024px) {
+      float: none;
+      display: block;
+    }
+
+    @media screen and (max-width: 470px) {
+      font-size: 1.5rem;
+    }
   }
   nav {
     display: inline-block;
     float: right;
     margin-top: 1rem;
+
+    @media screen and (max-width: 1024px) {
+      float: none;
+      display: block;
+    }
+
     ul {
       margin: 0;
       overflow: hidden;
+
+      @media screen and (max-width: 1024px) {
+        -webkit-padding-start: 0px;
+      }
+
       li {
         display: inline-block;
         list-style: none;
@@ -155,16 +175,23 @@ body {
         text-transform: uppercase;
         font-size: 1rem;
 
+        @media screen and (max-width: 520px) {
+          display: block;
+          margin: 1.5rem;
+        }
+
         a {
           text-decoration: none;
           color: $dark;
+
+          &:hover {
+            cursor: pointer;
+            border-bottom: 1px solid $flat-red;
+
+          }
         }
 
-        &:hover {
-          cursor: pointer;
-          border-bottom: 1px solid $flat-red;
 
-        }
       }
     }
   }
