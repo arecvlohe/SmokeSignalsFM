@@ -10,7 +10,12 @@
             <%= image_tag podcasts.thumbnail.url(:medium) %>
             <div class="podcast-overview">
               <h2><%= podcasts.title %></h2>
-              <p class="episode-count"><%= Episode.count %> Episode</p>
+              <% if podcasts.episodes.count > 0 %>
+                <p class="episode-count"><%= pluralize podcasts.episodes.size, 'Episode' %></p>
+              <% else %>
+                <p class="episode-count">Coming Soon</p>
+              <% end %>
+
             </div>
           </li>
         <% end %>
