@@ -2,6 +2,20 @@
  *= require font-awesome
  */
 
+ // Regular Version
+
+@font-face {
+  font-family: 'Sinkin Sans';
+  src: url('fonts/sinkinsans/sinkinsans_400regular_macroman/SinkinSans-400Regular-webfont.eot');
+  src: url('fonts/sinkinsans/sinkinsans_400regular_macroman/SinkinSans-400Regular-webfont.ttf') format('truetype');
+  src: url('fonts/sinkinsans/sinkinsans_400regular_macroman/SinkinSans-400Regular-webfont.woff') format('woff');
+  src: url('fonts/sinkinsans/sinkinsans_400regular_macroman/SinkinSans-400Regular-webfont.svg#sinkinsans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 $highlight: #cca580;
 $white: #ffffff;
 $dark: #443847;
@@ -12,10 +26,10 @@ $flat-carrot: #FCA520;
 $flat-turq: #2AC2C7;
 $flat-blue: #2C3E50;
 
-$black: #313131;
+$black: #505050;
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Sinkin Sans', sans-serif;
 }
 
 .wrapper-wide {
