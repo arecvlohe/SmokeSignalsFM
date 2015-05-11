@@ -9,10 +9,12 @@
   header {
     padding: 2.5rem 0;
     text-align: center;
+    box-sizing: border-box;
+    text-align: center;
 
     #logo {
       text-decoration: none;
-      display: inline;
+      display: inline-block;
       color: $black;
       float: left;
       text-transform: uppercase;
@@ -45,14 +47,10 @@
         -webkit-padding-start: 0;
         -webkit-margin-before: 0;
         -webkit-margin-after: 0;
-
-        @media screen and (max-width: 1024px) {
-          -webkit-padding-start: 0px;
-        }
-
+        -webkit-padding-start: 0px;
 
         li {
-          display: inline;
+          display: inline-block;
           list-style: none;
           color: $black;
           text-transform: uppercase;
@@ -70,7 +68,7 @@
             padding: 0 1.5rem;
 
             @media screen and (max-width: 520px) {
-              padding: 3rem 0;
+              padding: 0 3rem;
             }
 
             &:hover {
