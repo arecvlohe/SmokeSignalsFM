@@ -5,11 +5,11 @@
  // Regular Version
 
 @font-face {
-  font-family: 'Sinkin Sans';
-  src: url('fonts/sinkinsans/sinkinsans_400regular_macroman/SinkinSans-400Regular-webfont.eot');
-  src: url('fonts/sinkinsans/sinkinsans_400regular_macroman/SinkinSans-400Regular-webfont.ttf') format('truetype');
-  src: url('fonts/sinkinsans/sinkinsans_400regular_macroman/SinkinSans-400Regular-webfont.woff') format('woff');
-  src: url('fonts/sinkinsans/sinkinsans_400regular_macroman/SinkinSans-400Regular-webfont.svg#sinkinsans') format('svg');
+  font-family: 'sinkin sans';
+  src: asset-url('SinkinSans-400Regular-webfont.eot') format('embedded-opentype');
+  src: asset-url('SinkinSans-400Regular-webfont.ttf') format('truetype'),
+  asset-url('SinkinSans-400Regular-webfont.woff') format('woff'),
+  asset-url('SinkinSans-400Regular-webfont.svg#sinkinsans') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -29,7 +29,7 @@ $flat-blue: #2C3E50;
 $black: #505050;
 
 body {
-  font-family: 'Sinkin Sans', sans-serif;
+  font-family: 'sinkin sans', sans-serif;
 }
 
 .wrapper-wide {
