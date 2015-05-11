@@ -42,6 +42,9 @@
 
       ul {
         margin: 0;
+        -webkit-padding-start: 0;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
 
         @media screen and (max-width: 1024px) {
           -webkit-padding-start: 0px;
@@ -52,25 +55,26 @@
           display: inline;
           list-style: none;
           color: $black;
-          margin-left: 2.5rem;
           text-transform: uppercase;
           font-size: 1rem;
-
-          @media screen and (max-width: 1024px) {
-            margin: 0 1.5rem;
-          }
+          margin-left: 0;
 
           @media screen and (max-width: 520px) {
             display: block;
-            margin: 1.5rem;
+            margin: 1.5rem 0;
           }
 
           a {
             text-decoration: none;
             color: $dark;
+            padding: 0 1.5rem;
+
+            @media screen and (max-width: 520px) {
+              padding: 3rem 0;
+            }
+
             &:hover {
               cursor: pointer;
-              border-bottom: 1px solid $flat-red;
             }
           }
 

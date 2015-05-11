@@ -2,16 +2,62 @@
  *= require font-awesome
  */
 
+// Medium Version
+
+@font-face {
+  font-family: 'SinkinSans Medium';
+  src: font-url('<%= asset_path("SinkinSans-500Medium-webfont.eot") %>') format('embedded-opentype');
+  src: font-url('<%= asset_path("SinkinSans-500Medium-webfont.ttf") %>') format('truetype'),
+       font-url('<%= asset_path("SinkinSans-500Medium-webfont.woff") %>') format('woff'),
+       font-url('<%= asset_path("SinkinSans-500Medium-webfont.svg#sinkinsans") %>') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
  // Regular Version
 
 @font-face {
-  font-family: 'sinkin sans';
-  src: asset-url('SinkinSans-400Regular-webfont.eot') format('embedded-opentype');
-  src: asset-url('SinkinSans-400Regular-webfont.ttf') format('truetype'),
-  asset-url('SinkinSans-400Regular-webfont.woff') format('woff'),
-  asset-url('SinkinSans-400Regular-webfont.svg#sinkinsans') format('svg');
+  font-family: 'SinkinSans';
+  src: font-url('<%= asset_path("SinkinSans-400Regular-webfont.eot") %>') format('embedded-opentype');
+  src: font-url('<%= asset_path("SinkinSans-400Regular-webfont.ttf") %>') format('truetype'),
+       font-url('<%= asset_path("SinkinSans-400Regular-webfont.woff") %>') format('woff'),
+       font-url('<%= asset_path("SinkinSans-400Regular-webfont.svg#sinkinsans") %>') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+// Light Version
+
+@font-face {
+ font-family: 'SinkinSans Light';
+ src: font-url('<%= asset_path("SinkinSans-300Light-webfont.eot") %>') format('embedded-opentype');
+ src: font-url('<%= asset_path("SinkinSans-300Light-webfont.ttf") %>') format('truetype'),
+      font-url('<%= asset_path("SinkinSans-300Light-webfont.woff") %>') format('woff'),
+      font-url('<%= asset_path("SinkinSans-300Light-webfont.svg#sinkinsans-light") %>') format('svg');
+}
+
+// XLight Version
+
+@font-face {
+ font-family: 'SinkinSans XLight';
+ src: font-url('<%= asset_path("SinkinSans-200XLight-webfont.eot") %>') format('embedded-opentype');
+ src: font-url('<%= asset_path("SinkinSans-200XLight-webfont.ttf") %>') format('truetype'),
+      font-url('<%= asset_path("SinkinSans-200XLight-webfont.woff") %>') format('woff'),
+      font-url('<%= asset_path("SinkinSans-200XLight-webfont.svg#sinkinsans-light") %>') format('svg');
+ font-weight: light;
+ font-style: light;
+}
+
+// XLight Italic Version
+
+@font-face {
+ font-family: 'SinkinSans XLight Italic';
+ src: font-url('<%= asset_path("SinkinSans-200XLightItalic-webfont.eot") %>') format('embedded-opentype');
+ src: font-url('<%= asset_path("SinkinSans-200XLightItalic-webfont.ttf") %>') format('truetype'),
+      font-url('<%= asset_path("SinkinSans-200XLightItalic-webfont.woff") %>') format('woff'),
+      font-url('<%= asset_path("SinkinSans-200XLightItalic-webfont.svg#sinkinsans-light") %>') format('svg');
+ font-weight: light;
+ font-style: light;
 }
 
 
@@ -29,7 +75,7 @@ $flat-blue: #2C3E50;
 $black: #505050;
 
 body {
-  font-family: 'sinkin sans', sans-serif;
+  font-family: 'SinkinSans XLight', sans-serif;
 }
 
 .wrapper-wide {
