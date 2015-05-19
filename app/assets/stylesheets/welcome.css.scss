@@ -12,6 +12,26 @@
     box-sizing: border-box;
     text-align: center;
 
+    #sslogo {
+      height: 7rem;
+      display: inline-block;
+      float: left;
+
+      @media screen and (max-width: 1125px) {
+        float: none;
+        display: block;
+        margin: 0 auto
+      }
+
+      @media screen and (max-width: 960px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (max-width: 620px) {
+        font-size: 1.5rem;
+      }
+    }
+
     #logo {
       text-decoration: none;
       display: inline-block;
