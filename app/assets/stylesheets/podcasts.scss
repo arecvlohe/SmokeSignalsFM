@@ -1,4 +1,6 @@
 .podcasts-banner {
+//    background: #FF9800;
+//    background: #FFC107;
   background: {
     image: image-url("podcasts_banner.jpg");
     repeat: no-repeat;
@@ -11,7 +13,7 @@
     color: white;
     font: {
       size: 3rem;
-      weight: 300;
+      weight: normal;
     };
     letter-spacing: 1px;
     margin: 0;
@@ -20,7 +22,7 @@
 }
 
 #podcasts {
-  margin-top: 3rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
   ul {
     list-style: none;

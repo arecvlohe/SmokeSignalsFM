@@ -10,8 +10,8 @@
   src: font-url('<%= asset_path("SinkinSans-500Medium-webfont.ttf") %>') format('truetype'),
        font-url('<%= asset_path("SinkinSans-500Medium-webfont.woff") %>') format('woff'),
        font-url('<%= asset_path("SinkinSans-500Medium-webfont.svg#sinkinsans") %>') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: medium;
+  font-style: medium;
 }
 
  // Regular Version
@@ -76,6 +76,7 @@ $black: #505050;
 
 body {
   font-family: 'SinkinSans XLight', sans-serif;
+  position: relative
 }
 
 .wrapper-wide {
@@ -84,7 +85,11 @@ body {
 }
 
 #banner  {
-  padding-bottom: 5rem
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .wrapper {
@@ -133,54 +138,24 @@ body {
   padding: 1rem 2rem;
   border-radius: 2rem;
   outline: none;
-  border: 2px solid $highlight;
-}
+  min-width: 15rem;
+//  border: 2px solid $highlight;
 
-.btn-hl {
-  background: $white;
-  transition: background 0.4s ease-in-out;
-  display: inline-block;
-  min-width: 8.5rem;
-  &:hover {
-    background: $highlight;
-    color: $white;
+  @media screen and (max-width: 600px) {
+    min-width: 8rem;
   }
 }
 
 .btn-carrot {
-  color: $flat-carrot;
-  border: 2px solid $flat-carrot;
-  background: $white;
+  color: #2979FF;
+  background: white;
+  font-weight: medium;
   transition: background 0.4s ease-in-out;
   display: inline-block;
-  min-width: 8.5rem;
   &:hover {
-    background: $flat-carrot;
-    color: $white;
-  }
-}
-
-.btn-turq {
-  color: $flat-turq;
-  border: 2px solid $flat-turq;
-  background: $white;
-  transition: background 0.4s ease-in-out;
-  display: inline-block;
-  min-width: 10rem;
-  &:hover {
-    background: $flat-turq;
-    color: $white;
-  }
-}
-
-.btn-df {
-  background: $white;
-  color: $highlight;
-  transition: background 0.4s ease-in-out;
-  display: inline-block;
-  min-width: 8.5rem;
-  &:hover {
-    background: darken($white, 7.5%);
+    color: white;
+    background: #2979FF;
+    border: none;
   }
 }
 
@@ -381,6 +356,21 @@ textarea {
 
 .form {
   padding: 0 0 5rem 0;
+}
+
+.main-footer {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+  background: darken(#fff, 12%);
+
+  hr {
+    color: #eee;
+    width: 90%;
+  }
 }
 
 @import "normalize";
