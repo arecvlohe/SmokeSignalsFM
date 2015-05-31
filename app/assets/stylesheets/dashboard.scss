@@ -1,6 +1,6 @@
 #podcast-show {
   #show-banner {
-    background: $dark;
+    background: #8D6E63; // Brown 400
     text-align: center;
     padding: 5rem 0;
     h1 {
@@ -12,7 +12,8 @@
     .description {
       width: 85%;
       margin: 0 auto 2rem auto;
-      color: lighten($dark, 35%);
+      color: $white;
+      opacity: .7;
     }
     .subscribe-link {
       font: {
@@ -38,19 +39,20 @@
 }
 
 #links {
+  font-family: SinkinSans;
   padding: 2rem 0;
   ul {
     list-style: none;
     padding-left: 0;
     padding: 4rem 0;
     margin-bottom: 1rem;
-    border-bottom: 1px solid lighten($dark, 50%);
+    border-bottom: 1px solid lighten($dark, 30%);
     li {
       display: inline;
       margin-right: 1rem;
       font-weight: 700;
       a {
-        color: $dark;
+        color: $black;
         text-decoration: none;
         &:hover {
           color: $highlight;
@@ -69,9 +71,13 @@
       font-weight: 700;
       font-size: 0.9rem;
       a {
-        color: $highlight;
+        color: lighten($black, 50%);
         margin-right: 1rem;
         text-decoration: none;
+
+        &:hover {
+          color: $highlight;
+        }
       }
     }
   }

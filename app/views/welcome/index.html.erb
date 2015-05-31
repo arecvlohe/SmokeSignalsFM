@@ -2,18 +2,12 @@
   <header class="cf">
     <div class="wrapper-wide">
       <%= link_to image_tag("SmokeSignal-teepeetower(s).png", :id => "sslogo"), root_path %>
-      <nav>
-        <ul>
-          <li><%= link_to "Explore", podcasts_path %></li>
-          <li><%= link_to "Sign In", new_podcast_session_path %></li>
-          <li><%= link_to "Create a Podcast", new_podcast_registration_path %></li>
-        </ul>
-      </nav>
     </div>
   </header>
   <div class="wrapper-skinny">
     <div id="banner">
       <h1><%= link_to "Explore", podcasts_path %> Podcasts<br>from <span id="country">Indian&nbsp;Country</span><br> or <%= link_to "Create", new_podcast_registration_path %> Your Own</h1>
+      <p><%= link_to "Sign In", new_podcast_session_path, class: "btn btn-carrot" %></p>
     </div>
   </div>
 </div>

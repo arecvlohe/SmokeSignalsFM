@@ -44,8 +44,8 @@
  src: font-url('<%= asset_path("SinkinSans-200XLight-webfont.ttf") %>') format('truetype'),
       font-url('<%= asset_path("SinkinSans-200XLight-webfont.woff") %>') format('woff'),
       font-url('<%= asset_path("SinkinSans-200XLight-webfont.svg#sinkinsans-light") %>') format('svg');
- font-weight: light;
- font-style: light;
+ font-weight: xlight;
+ font-style: xlight;
 }
 
 // XLight Italic Version
@@ -56,17 +56,16 @@
  src: font-url('<%= asset_path("SinkinSans-200XLightItalic-webfont.ttf") %>') format('truetype'),
       font-url('<%= asset_path("SinkinSans-200XLightItalic-webfont.woff") %>') format('woff'),
       font-url('<%= asset_path("SinkinSans-200XLightItalic-webfont.svg#sinkinsans-light") %>') format('svg');
- font-weight: light;
- font-style: light;
+ font-weight: xlight italic;
+ font-style: xlight italic;
 }
 
 
 
-$highlight: #cca580;
+$highlight: #FF6D00;
 $white: #ffffff;
-$dark: #443847;
+$dark: #607D8B;
 $light: #edeff5;
-
 $black: #505050;
 
 body {
@@ -93,13 +92,6 @@ body {
   bottom: 0;
   right: 0;
 
-  @media screen and (max-width: 1125px) {
-    height: 35%;
-}
-
-  @media screen and(max-width: 630px) {
-    height: 30%;
-  }
 }
 
 .wrapper {
@@ -129,7 +121,7 @@ body {
 .notice-wrapper {
   width: 100%;
   position: absolute;
-  background: rgba(193, 146, 102, .85);
+  background: #BCAAA4; // Brown 200
   z-index: 999;
 
   p {
@@ -142,30 +134,29 @@ body {
 }
 
 .btn {
-  color: $highlight;
   text-decoration: none;
   font-size: 1rem;
-  padding: 1rem 2rem;
+  padding: .7rem 1.5rem;
   border-radius: 2rem;
   outline: none;
-  min-width: 15rem;
-//  border: 2px solid $highlight;
+  min-width: 8rem;
 
-  @media screen and (max-width: 600px) {
-    min-width: 8rem;
+  @media screen and (max-width: 630px) {
+    min-width: 3rem;
   }
 }
 
 .btn-carrot {
-  color: #2979FF;
+  color: #FF6D00;
   background: white;
   font-weight: medium;
   transition: background 0.4s ease-in-out;
   display: inline-block;
+  border: 2px solid #FF6D00;
   &:hover {
     color: white;
-    background: #2979FF;
-    border: none;
+    background: #FF6D00;
+    border: 2px solid #FF6D00;
   }
 }
 
@@ -375,7 +366,7 @@ textarea {
   position: fixed;
   bottom: 0rem;
   width: 100%;
-  background: darken(#fff, 12%);
+  background: #EFEBE9;  // Brown 50
 
   hr {
     color: #eee;
