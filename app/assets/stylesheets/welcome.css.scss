@@ -1,13 +1,9 @@
 #background {
   margin: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  // background-image: image-url("dreamcatcher.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-attachment: fixed;
-//  background: #FF9800; // orange
-//  background: #FFC107; // amber
+  position: relative;
+  box-sizing: border-box;
 
   header {
     padding-top: 2.5rem;
@@ -16,34 +12,9 @@
     text-align: center;
 
     #sslogo {
-      height: 10rem;
+      height: 9rem;
       display: block;
       margin: 0 auto;
-
-    }
-
-    #logo {
-      text-decoration: none;
-      display: inline-block;
-      color: $black;
-      float: left;
-      text-transform: uppercase;
-      font-size: 2.5rem;
-      font-weight: 300;
-      letter-spacing: 3px;
-
-      @media screen and (max-width: 1125px) {
-        float: none;
-        display: block;
-      }
-
-      @media screen and (max-width: 960px) {
-        font-size: 2rem;
-      }
-
-      @media screen and (max-width: 630px) {
-        font-size: 1.5rem;
-      }
     }
   }
   .wrapper-skinny {
@@ -51,7 +22,7 @@
     max-width: 560px;
     margin: 0 auto;
     text-align: center;
-    background-image: none;
+
     h1 {
       color: $black;
       font: {
