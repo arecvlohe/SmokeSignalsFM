@@ -1,7 +1,9 @@
 #sign-in-banner {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("person-in-hoodie.jpeg");
+  background-image: linear-gradient( rgba(55.3, 43.1, 38.8, 0.5), rgba(55.3, 43.1, 38.8, 0.5) ), image-url("person-in-hoodie.jpeg");
+  background-position: 50% 40%;
 }
 
 #sign-up-banner {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), image-url("hopi-proverb.jpg");
+  background-image: linear-gradient( rgba(55.3, 43.1, 38.8, 0.6), rgba(55.3, 43.1, 38.8, 0.6) ), image-url("hopi-proverb.jpg");
+  background-position: 50% 85%;
 }
